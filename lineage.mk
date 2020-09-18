@@ -14,11 +14,8 @@
 # limitations under the License.
 #
 
-# Specify phone tech before including full_phone
-$(call inherit-product, vendor/omni/config/gsm.mk)
-
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit Telephony packages
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -32,7 +29,7 @@ PRODUCT_COPY_FILES += \
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ef71
-PRODUCT_NAME := omni_ef71
+PRODUCT_NAME := lineage_ef71
 PRODUCT_BRAND := SKY
 PRODUCT_MODEL := IM-100
 PRODUCT_MANUFACTURER := pantech
